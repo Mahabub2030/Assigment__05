@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="color-scheme" content="dark light">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .lexend-font {
+        font-family: "Lexend", system-ui;
+      }
+    </style>
+    <title>Donation Bangladesh</title>
+  </head>
+  <body class="mx-auto lexend-font">
+    <nav id="nav" class="md:sticky top-0 backdrop-blur-lg">
+      <div
+        class="flex justify-around items-center bg-[#F9F7F3] bg-opacity-70 py-4"
+      >
+        <button
+          onclick="togglePage()"
+          id="toggle-btn"
+          class="bg-[#B4F461] md:text-xl text-xs font-semibold py-2 md:px-6 px-4 rounded-lg"
+        >
+          Home
+        </button>
+        <div class="flex items-center md:gap-2 gap-1">
+          <img
+            class="md:size-fit size-6"
+            src="./Assest/logo.png"
+            alt="donate"
+          />
+          <h1 class="font-bold md:text-xl text-xs">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./Assest/coin.png" alt="dollar" />
+          <p
+            id="blog-remaining-balance"
+            class="text-[#111111] md:text-lg text-xs font-semibold"
+          >
+            20000
+          </p>
+          <span class="text-gray-700 md:text-lg text-xs md:font-semibold"
+            >BDT</span
+          >
+        </div>
+      </div>
+    </nav>
+    <section id="home-section" class="md:px-10 px-6 py-4 md:mb-2 mb-6">
+      <div class="flex gap-2 items-center md:px-2 px-2 pt-2 md:py-6">
+        <h2 class="md:text-4xl text-2xl font-bold">Important FAQ</h2>
+        <i class="fa-regular fa-circle-question text-3xl"></i>
+      </div>
+      <div class="faq-card-section md:px-6 px-2 py-4 md:py-2"></div>
+        <div class="collapse collapse-arrow border-2 rounded-md py-4">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-medium">
+            <h2 class="md:text-xl text-base font-bold text-gray-700">
+              what is the Document Object Model (DOM)?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <p class="md:text-base text-sm text-gray-600">
+              A programming interface for web documents. It represents the page
+              so that programs can change the document structure, style, and
+              content.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border-2 rounded-md py-4">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="md:text-xl text-base font-bold text-gray-700">
+              How do you select an element from the DOM?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <p class="md:text-base text-sm text-gray-600">
+              The getElementById() method of the Document interface returns an
+              Element object representing the element whose id property matches
+              the specified string.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border-2 rounded-md py-4">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="md:text-xl text-base  font-bold text-gray-700">
+              what is event delegation in the context of the DOM and why is it
+              useful?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <p class="md:text-base text-sm text-gray-600">
+              Event delegation refers to the process of using event propagation
+              (bubbling) to handle events at a higher level in the DOM than the
+              element on which the event originated.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow border-2 rounded-md py-4">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h2 class="md:text-xl text-base  font-bold text-gray-700">
+              How do you manipulate an elements attributes and styles using the
+              DOM?
+            </h2>
+          </div>
+          <div class="collapse-content">
+            <p class="md:text-base text-sm text-gray-600">
+              we can use element.classList.add(), element.setAttribute()
+              ,element.style.attribute etc to manipulate the elements attributes
+              and styles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./jsFile/utilities.js"></script>
+    <script src="./jsFile/donation.js"></script>
+  </body>
+</html>
