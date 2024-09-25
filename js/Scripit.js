@@ -1,4 +1,4 @@
-// Call function
+
 
 getDonation(
   "btn-donation-for-noakhali",
@@ -19,7 +19,7 @@ getDonation(
   "quota-protest-title"
 );
 
-// Move history or donation section
+
 document.getElementById("btn-donation").addEventListener("click", function () {
   showSectionById("donation-section");
   document.scrollTo({
